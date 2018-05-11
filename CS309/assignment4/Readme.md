@@ -1,4 +1,4 @@
-# Basic Time stamp ordering protocol
+# [Basic Time stamp ordering protocol](https://github.com/abhijeet2096/Assignments/tree/master/CS309/assignment4)
 In this assignment we have tried to simulate basic time stamp ordering.
 
 # Requirements
@@ -46,8 +46,25 @@ We have made Two classes
 
 **class Transaction(object):** :- This class is used to simulate transaction with following functions:
 
-1. read : 
-2. write
+1. read : To simulate Read operation of a transaction.
+
+  *Input* Object X , where X is a simulated database object.
+
+  *Output* True if successful otherwise vice versa.
+2. write : To simulate Write operation of a transaction.
+
+  *Input* Object X , where X is a simulated database object.
+
+  *Output* True if successful otherwise vice versa.
+
+**class X(object)** :- This class is used to simulate Database Object with following function:
+
+1. read_ts :  Returns the value of last read timestamp.
+2. write_ts : Returns the values of last write timestamp.
+3. set_read_ts : Sets the value of read timestamp.
+4. set_write_ts : Sets the values of write timestamp.
+
+We have used try exception method in python to simulate rollback!
 
 # About
 This assignment is for course CS309 under Prof [Sriram Kailasam.](http://faculty.iitmandi.ac.in/~sriramk/)
